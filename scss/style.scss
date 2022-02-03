@@ -1,0 +1,115 @@
+@import "pre-config";
+@import "util";
+
+.container {
+  height: 100vh;
+  @include flex-column;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/pattern-background-desktop.svg) no-repeat;
+
+  @media only screen and (max-width: 390px) {
+    background: url(../images/pattern-background-mobile.svg) no-repeat;
+  }
+}
+
+.card {
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.box {
+  padding: 0 10% 10% 10%;
+}
+
+.hero {
+  width: 100%;
+  min-height: 220px;
+  background: url(../images/illustration-hero.svg) no-repeat;
+  background-position: center;
+  border-radius: 18px 18px 0 0;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  color: $dark-blue;
+  margin-bottom: 15px;
+  font-weight: 900;
+}
+
+#description {
+  margin-bottom: 30px;
+}
+
+.plan {
+  padding: 20px;
+  @include flex-row;
+  justify-content: space-between;
+  background: $very-pale-blue;
+  border-radius: 18px;
+  margin-bottom: 30px;
+
+  & > .wrapper {
+    @include flex-row;
+    gap: 14px;
+  }
+
+  .icon {
+    svg {
+      width: 100%;
+      max-width: 48px;
+    }
+  }
+
+  &-detail {
+    @include flex-column;
+    align-items: flex-start;
+    gap: 2px;
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $dark-blue;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.buttons {
+  @include flex-column;
+  gap: 20px;
+
+  button {
+    @include btn;
+  }
+
+  #confirm {
+    background: $bright-blue;
+    color: #fff;
+
+    &:hover {
+      background: lighten($bright-blue, 10%);
+    }
+  }
+
+  #cancel {
+    color: $desaturated-blue;
+    background: transparent;
+
+    &:hover {
+      color: $dark-blue;
+    }
+  }
+}
+
+.attribution {
+  text-align: center;
+  font-size: 0.8rem;
+}

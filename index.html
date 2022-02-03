@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: #3e52a3;
+    } -->
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Card Component -->
+    <div class="card">
+
+      <!-- Illustration -->
+      <div class="hero"></div>
+
+      <!-- Bottom section of the card -->
+      <div class="box">
+
+        <!-- Heading -->
+        <h1>Order Summary</h1>
+        <!-- Description -->
+        <p id="description"> You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+          you like!
+        </p>
+
+        <!-- Plan details -->
+        <div class="plan">
+
+          <!-- Wrapper for the icon and info -->
+          <div class="wrapper">
+
+            <!-- Icon -->
+            <div class="icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="24" cy="24" r="24" fill="#DFE6FB" />
+                  <path fill="#717FA6" fill-rule="nonzero"
+                    d="M32.574 15.198a.81.81 0 00-.646-.19L20.581 16.63a.81.81 0 00-.696.803V26.934a3.232 3.232 0 00-1.632-.44A3.257 3.257 0 0015 29.747 3.257 3.257 0 0018.253 33a3.257 3.257 0 003.253-3.253v-8.37l9.726-1.39v5.327a3.232 3.232 0 00-1.631-.441 3.257 3.257 0 00-3.254 3.253 3.257 3.257 0 003.254 3.253 3.257 3.257 0 003.253-3.253V15.81a.81.81 0 00-.28-.613z" />
+                </g>
+              </svg>
+            </div>
+
+            <!-- Plan info -->
+            <div class="plan-detail">
+              <h2 id="plan-name">Annual Plan</h2>
+              <p id="plan-price">$59.99/year</p>
+            </div>
+          </div>
+
+          <!-- Change plan link -->
+          <a href="#">Change</a>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+          <button id="confirm">Proceed to Payment</button>
+          <button id="cancel">Cancel Order</button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Pedro Lucas G.</a>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

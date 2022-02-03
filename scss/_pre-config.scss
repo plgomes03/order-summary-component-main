@@ -1,0 +1,31 @@
+@import "util";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  color: $desaturated-blue;
+}
+
+body {
+  background-color: $pale-blue;
+
+  a {
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: underline;
+    color: $bright-blue;
+
+    &:hover,
+    &:active {
+      text-decoration: none;
+      cursor: pointer;
+      color: lighten($bright-blue, 10%);
+    }
+  }
+}
